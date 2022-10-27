@@ -14,3 +14,14 @@
 .gray-bg {
   background: #eaecf0;
 }
+.gray-3 {
+  color: #d0d5dd;
+}
+.share-box {
+  margin-left: 78%;
+}
+@media screen and (max-width: 640px) {
+  .share-box {
+    margin-left: 80%;
+  }
+}
