@@ -55,11 +55,23 @@ function App() {
         </a>
         <a
           href="https://books.zuri.team/design-rules"
-          className="gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg"
+          className="gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg sm:mb-0 mb-12"
           id="book__design"
         >
           Design Books
         </a>
+        <div className="hidden sm:flex links-icons gap-7 mx-auto">
+          <img src={require("./assets/slack.png")} alt="slack" />
+          <img src={require("./assets/github.png")} alt="github" />
+        </div>
+      </div>
+      <div className="hidden sm:block footer my-20 mx-28">
+        <hr className="border-t-1" />
+        <div className="footer-logos flex justify-between mt-10">
+          <img src={require("./assets/zuri.png")} alt="zuri" />
+          <p className="gray-text2">HNG Internship 9 Frontend Task</p>
+          <img src={require("./assets/I4G.png")} alt="I4G" />
+        </div>
       </div>
     </div>
   );
