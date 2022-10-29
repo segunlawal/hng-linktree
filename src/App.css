@@ -8,20 +8,70 @@
 .gray-text {
   color: #101828;
 }
-.gray-text2 {
-  color: #667085;
-}
 .gray-bg {
   background: #eaecf0;
 }
-.gray-3 {
-  color: #d0d5dd;
-}
-.share-box {
-  margin-left: 78%;
+.link:hover {
+  background: #d0d5dd;
 }
 @media screen and (max-width: 640px) {
   .share-box {
     margin-left: 80%;
+  }
+}
+.profile:hover .change-pic {
+  opacity: 1;
+}
+.profile:hover img {
+  filter: brightness(0.75);
+}
+.change-pic {
+  height: 19px;
+  background: center/cover url("./assets/change-pic.png") no-repeat;
+}
+/* For tooltip */
+/* Tooltip container */
+.tooltip {
+  position: relative;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #101828;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  right: 130%;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #101828;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+@media screen and (max-width: 640px) {
+  .tooltip:hover .tooltiptext {
+    display: none;
   }
 }

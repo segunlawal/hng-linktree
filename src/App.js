@@ -4,11 +4,11 @@ function App() {
   return (
     <div className="App mt-16 justify-center">
       <div className="profile-section flex flex-col">
-        <div className="cursor-pointer share-box border-dashed flex items-center justify-center border-2 w-10 h-10 -mb-5 rounded-full">
+        <div className="tooltip cursor-pointer hover:bg-[#F9FAFB] ml-[78%] border-dashed flex items-center justify-center border-2 w-10 h-10 -mb-5 rounded-full">
           <picture>
             <source
               media="(min-width: 640px)"
-              srcset={require("./assets/share.png")}
+              srcSet={require("./assets/share.png")}
             />
             <img
               src={require("./assets/share-mobile.png")}
@@ -16,13 +16,18 @@ function App() {
               className="rounded-full"
             />
           </picture>
+          <span className="tooltiptext">Share Link</span>
         </div>
-        <img
-          src={require("./assets/profile_img.jpg")}
-          alt="profile-img"
-          className="w-20 mx-auto rounded-full"
-          id="profile__img"
-        />
+
+        <div className="mx-auto profile">
+          <img
+            src={require("./assets/profile_img.jpg")}
+            alt="profile-img"
+            className="profile-img cursor-pointer w-24 rounded-full"
+            id="profile__img"
+          />
+          <div className="absolute opacity-0 change-pic cursor-pointer w-5 ml-10 -mt-7" />
+        </div>
         <p className="font-bold mt-2" id="twitter">
           Segun__Lawal
         </p>
@@ -33,8 +38,9 @@ function App() {
 
       <div className="links-section mt-14 flex flex-col gap-6">
         <a
-          href="/"
-          className="gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg"
+          href="https://twitter.com/Segun__Lawal"
+          rel="noreferrer"
+          className="link focus:outline focus:outline-1 focus:outline-[#98A2B3] gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg"
         >
           Twitter Link
         </a>
@@ -42,7 +48,7 @@ function App() {
           href="https://training.zuri.team/"
           target="_blank"
           rel="noreferrer"
-          className="gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg"
+          className="link focus:outline focus:outline-1 focus:outline-[#98A2B3] gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg"
           id="btn__zuri"
         >
           Zuri Team
@@ -51,8 +57,9 @@ function App() {
           href="http://books.zuri.team"
           target="_blank"
           rel="noreferrer"
-          className="gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg"
+          className="link focus:outline focus:outline-1 focus:outline-[#98A2B3] gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg"
           id="books"
+          title="Find books about design and coding!"
         >
           Zuri Books
         </a>
@@ -60,8 +67,9 @@ function App() {
           href="https://books.zuri.team/python-for-beginners?ref_id=segunlawal"
           target="_blank"
           rel="noreferrer"
-          className="gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg"
+          className="link focus:outline focus:outline-1 focus:outline-[#98A2B3] gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg"
           id="book__python"
+          title="Get a coding book today!"
         >
           Python Books
         </a>
@@ -69,8 +77,9 @@ function App() {
           href="https://background.zuri.team"
           target="_blank"
           rel="noreferrer"
-          className="gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg"
+          className="link focus:outline focus:outline-1 focus:outline-[#98A2B3] gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg"
           id="pitch"
+          title="Find out more about that coder"
         >
           Background Check for Coders
         </a>
@@ -78,20 +87,21 @@ function App() {
           href="https://books.zuri.team/design-rules"
           target="_blank"
           rel="noreferrer"
-          className="gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg sm:mb-0 mb-12"
+          className="link focus:outline focus:outline-1 focus:outline-[#98A2B3] gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg sm:mb-0 mb-12"
           id="book__design"
+          title="Get a free design book from Zuri"
         >
           Design Books
         </a>
         <div className="flex links-icons gap-7 mx-auto">
-          <a href="/">
+          <a href="/" rel="noreferrer">
             <img
               src={require("./assets/slack.png")}
               alt="slack"
               className="w-6"
             />
           </a>
-          <a href="/">
+          <a href="https://github.com/segunlawal" rel="noreferrer">
             <img
               src={require("./assets/github.png")}
               alt="github"
@@ -108,7 +118,7 @@ function App() {
             alt="zuri"
             className="w-48 h-9"
           />
-          <p className="gray-text2 text-left my-4">
+          <p className="text-[#667085] text-left my-4">
             HNG Internship 9 Frontend Task
           </p>
           <img
