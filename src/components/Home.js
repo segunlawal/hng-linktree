@@ -92,6 +92,16 @@ function Home() {
         >
           Design Books
         </a>
+        <a
+          href="/contact"
+          target="_blank"
+          rel="noreferrer"
+          className="link focus:outline focus:outline-1 focus:outline-[#98A2B3] gray-text gray-bg font-medium text-lg sm:mx-36 mx-4 py-6 rounded-lg sm:mb-0 mb-12"
+          id="contact"
+          title="Get a free design book from Zuri"
+        >
+          Contact Me
+        </a>
         <div className="flex links-icons gap-7 mx-auto">
           <a href="/" rel="noreferrer">
             <img
