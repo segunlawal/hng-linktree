@@ -3,7 +3,7 @@ function Contact() {
   const name = "segunlawal";
   return (
     <div>
-      <div className="mx-5">
+      <div className="lg:inline-block lg:mx-auto ml-4 md:mb-[188px] mb-[66px] lg:mt-[156px] mt-14">
         <p className="font-semibold text-left text-4xl text-[#101828] leading-[44px] tracking-[-0.02em]">
           Contact Me
         </p>
@@ -23,13 +23,13 @@ function Contact() {
                 type="name"
                 id="first_name"
                 placeholder="Enter your first name"
-                className="bxshadow py-[10px] px-[14px] text-left w-[348px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg"
+                className="bxshadow py-[10px] px-[14px] text-left w-[343px] md:w-[348px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg"
                 required
                 spellCheck="false"
                 name="first"
               />
             </div>
-            <div className="flex flex-col gap-1.5">
+            <div className="flex flex-col gap-1.5 lg:mt-0 mt-6">
               <label
                 htmlFor="last_name"
                 className="text-left font-medium text-sm text-[#344054] leading-5"
@@ -40,7 +40,7 @@ function Contact() {
                 type="name"
                 id="last_name"
                 placeholder="Enter your last name"
-                className="bxshadow py-[10px] px-[14px] text-left w-[348px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg"
+                className="bxshadow py-[10px] px-[14px] text-left w-[343px] md:w-[348px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg"
                 required
                 spellCheck="false"
                 name="last_name"
@@ -58,7 +58,7 @@ function Contact() {
               type="email"
               id="email"
               placeholder="yourname@email.com"
-              className="bxshadow py-[10px] px-[14px] text-left w-[720px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg"
+              className="bxshadow py-[10px] px-[14px] text-left md:w-[720px] w-[343px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg"
               required
               spellCheck="false"
               name="email"
@@ -72,7 +72,7 @@ function Contact() {
               Message
             </label>
             <textarea
-              className="bxshadow py-[10px] px-[14px] text-left w-[720px] h-[108px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg resize-none"
+              className="bxshadow py-[10px] px-[14px] text-left w-[343px] md:w-[720px] h-[108px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg resize-none"
               id="message"
               placeholder="Send me a message and I'll reply you as soon as possible..."
               required
@@ -87,7 +87,7 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className="bxshadow mt-11 bg-[#1570EF] text-white py-[12px] px-[303px] w-[720px] rounded-lg"
+            className="bxshadow mt-11 bg-[#1570EF] text-white py-[12px] md:w-[720px] w-[343px] rounded-lg"
           >
             Send Message
           </button>
