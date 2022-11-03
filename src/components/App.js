@@ -1,5 +1,4 @@
-import "./App.css";
-
+import "../App.css";
 function App() {
   return (
     <div className="App mt-16 justify-center">
@@ -8,10 +7,10 @@ function App() {
           <picture>
             <source
               media="(min-width: 640px)"
-              srcSet={require("./assets/share.png")}
+              srcSet={require("../assets/share.png")}
             />
             <img
-              src={require("./assets/share-mobile.png")}
+              src={require("../assets/share-mobile.png")}
               alt="profile-img"
               className="rounded-full"
             />
@@ -21,7 +20,7 @@ function App() {
 
         <div className="mx-auto profile">
           <img
-            src={require("./assets/profile_img.jpg")}
+            src={require("../assets/profile_img.jpg")}
             alt="profile-img"
             className="profile-img cursor-pointer w-24 rounded-full"
             id="profile__img"
@@ -96,14 +95,14 @@ function App() {
         <div className="flex links-icons gap-7 mx-auto">
           <a href="/" rel="noreferrer">
             <img
-              src={require("./assets/slack.png")}
+              src={require("../assets/slack.png")}
               alt="slack"
               className="w-6"
             />
           </a>
           <a href="https://github.com/segunlawal" rel="noreferrer">
             <img
-              src={require("./assets/github.png")}
+              src={require("../assets/github.png")}
               alt="github"
               className="w-6"
             />
@@ -114,7 +113,7 @@ function App() {
         <hr className="border-t-1" />
         <div className="footer-logos sm:flex justify-between mt-10">
           <img
-            src={require("./assets/zuri.png")}
+            src={require("../assets/zuri.png")}
             alt="zuri"
             className="w-48 h-9"
           />
@@ -122,7 +121,7 @@ function App() {
             HNG Internship 9 Frontend Task
           </p>
           <img
-            src={require("./assets/I4G.png")}
+            src={require("../assets/I4G.png")}
             alt="I4G"
             className="w-32 h-8"
           />
