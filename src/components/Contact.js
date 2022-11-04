@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Footer from "./Footer";
 function Contact() {
   const name = "segunlawal";
@@ -6,6 +7,9 @@ function Contact() {
     alert("Message sent successfully!");
     e.target.reset();
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="lg:inline-block lg:mx-auto ml-4 md:mb-[188px] mb-[66px] lg:mt-[156px] mt-14">
