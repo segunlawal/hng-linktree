@@ -1,6 +1,11 @@
 import Footer from "./Footer";
 function Contact() {
   const name = "segunlawal";
+  const sendMessage = (e) => {
+    e.preventDefault();
+    alert("Message sent successfully!");
+    e.target.reset();
+  };
   return (
     <div>
       <div className="lg:inline-block lg:mx-auto ml-4 md:mb-[188px] mb-[66px] lg:mt-[156px] mt-14">
@@ -10,7 +15,7 @@ function Contact() {
         <p className="text-left text-[#475467] text-xl leading-[30px] mt-5">
           Hi there, contact me to ask me about anything you have in mind.
         </p>
-        <form className="text-left mt-12">
+        <form className="text-left mt-12" onSubmit={sendMessage}>
           <div className="lg:flex gap-6">
             <div className="flex flex-col gap-1.5">
               <label
@@ -87,7 +92,7 @@ function Contact() {
             </p>
           </div>
           <div className="mt-6 flex gap-3">
-            <input type="checkbox" name="checkbox" className="w-5" />
+            <input type="checkbox" name="checkbox" className="w-5" required />
             <label htmlFor="checkbox" className="text-left text-[#475467]">
               You agree to providing your data to {name} who may contact you.
             </label>
