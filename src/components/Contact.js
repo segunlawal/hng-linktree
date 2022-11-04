@@ -12,7 +12,7 @@ function Contact() {
   }, []);
   return (
     <div>
-      <div className="lg:inline-block lg:mx-auto ml-4 md:mb-[188px] mb-[66px] lg:mt-[156px] mt-14">
+      <div className="lg:inline-block lg:mx-auto ml-4 mb-[66px] mt-14">
         <p className="font-semibold text-left text-4xl text-[#101828] leading-[44px] tracking-[-0.02em]">
           Contact Me
         </p>
