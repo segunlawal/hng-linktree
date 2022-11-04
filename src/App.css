@@ -78,6 +78,15 @@
 .bxshadow {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 }
-.submit-button:focus {
+.bxshadow:focus:valid ~ .email-hint,
+.txtarea:focus:valid ~ .txtarea-hint {
+  display: none;
+}
+.submit-button:focus,
+.txtarea:focus {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
+}
+.txtarea:focus:invalid {
+  border: 1px solid #f89687;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #ffd3cc;
 }

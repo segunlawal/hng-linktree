@@ -23,7 +23,7 @@ function Contact() {
                 type="name"
                 id="first_name"
                 placeholder="Enter your first name"
-                className="bxshadow py-[10px] px-[14px] text-left w-[343px] md:w-[348px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg"
+                className="bxshadow py-[10px] px-[14px] text-left w-[343px] md:w-[348px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg outline-none focus:border-[1px] focus:border-[#84CAFF]"
                 required
                 spellCheck="false"
                 name="first"
@@ -40,7 +40,7 @@ function Contact() {
                 type="name"
                 id="last_name"
                 placeholder="Enter your last name"
-                className="bxshadow py-[10px] px-[14px] text-left w-[343px] md:w-[348px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg"
+                className="bxshadow py-[10px] px-[14px] text-left w-[343px] md:w-[348px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg outline-none focus:border-[1px] focus:border-[#84CAFF]"
                 required
                 spellCheck="false"
                 name="last_name"
@@ -58,11 +58,15 @@ function Contact() {
               type="email"
               id="email"
               placeholder="yourname@email.com"
-              className="bxshadow py-[10px] px-[14px] text-left md:w-[720px] w-[343px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg"
+              className="bxshadow peer py-[10px] px-[14px] text-left md:w-[720px] w-[343px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg outline-none focus:border-[1px] focus:border-[#84CAFF] "
               required
               spellCheck="false"
+              autoComplete="off"
               name="email"
             />
+            <p className="email-hint hidden peer-focus:block text-left text-sm text-[#475467] font-light">
+              Please enter a valid email address.
+            </p>
           </div>
           <div className="flex flex-col gap-1.5 mt-6">
             <label
@@ -72,12 +76,15 @@ function Contact() {
               Message
             </label>
             <textarea
-              className="bxshadow py-[10px] px-[14px] text-left w-[343px] md:w-[720px] h-[108px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg resize-none"
+              className="bxshadow peer txtarea py-[10px] px-[14px] text-left w-[343px] md:w-[720px] h-[108px] placeholder:text-[#667085] border-[1px] border-[#D0D5DD] rounded-lg resize-none outline-none focus:border-[1px] focus:border-[#84CAFF]"
               id="message"
               placeholder="Send me a message and I'll reply you as soon as possible..."
               required
               name="message"
             />
+            <p className="txtarea-hint hidden peer-focus:block text-left text-[#F83F23] font-medium text-sm">
+              Please enter a message
+            </p>
           </div>
           <div className="mt-6 flex gap-3">
             <input type="checkbox" name="checkbox" className="w-5" />
