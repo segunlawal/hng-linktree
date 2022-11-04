@@ -103,7 +103,7 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className="bxshadow submit-button mt-11 bg-[#1570EF] bprder-[1px] text-white py-[12px] md:w-[720px] w-[343px] rounded-lg hover:bg-[#175CD3] disabled:bg-[#B2DDFF]"
+            className="bxshadow submit-button mt-11 bg-[#1570EF] border-[1px] text-white py-[12px] md:w-[720px] w-[343px] rounded-lg hover:bg-[#175CD3] disabled:bg-[#B2DDFF]"
             id="btn__submit"
           >
             Send Message
